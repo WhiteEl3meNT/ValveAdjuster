@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>ValveAdjuster</AssemblyName>
+    <RootNamespace>ValveAdjuster.WinForms</RootNamespace>
+    <Version>1.0.0</Version>
+    <Authors>ValveAdjuster contributors</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationIcon>Assets\logo.ico</ApplicationIcon>
+      <!-- Self-contained single-file Windows build: no .NET install needed on the target PC. -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishTrimmed>false</PublishTrimmed>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\logo.ico" LogicalName="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ValveAdjuster.Core\ValveAdjuster.Core.csproj" />
+  </ItemGroup>
+
+</Project>

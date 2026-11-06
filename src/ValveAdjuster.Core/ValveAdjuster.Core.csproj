@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ValveAdjuster.Core</RootNamespace>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Calculation engine for engine valve clearance adjustment.</Description>
+  </PropertyGroup>
+
+</Project>
